@@ -43,6 +43,8 @@ def get_ticker_data():
         ticker_results[item] = data_name_value
       
       results.append(ticker_results)
+    else:
+      print('Could not connect to finviz for ' + ticker)
 
 def display_ticker_data(ticker_data):
   data_name = 'Name'
